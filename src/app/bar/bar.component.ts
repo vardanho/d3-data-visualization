@@ -75,8 +75,8 @@ export class BarComponent implements OnInit {
     //d3.csv('/assets/frameworks.csv').then((data) => this.drawBars(data));
 
     //parse data from a json
-    d3.json('https://api.jsonbin.io/b/5eee6a5397cb753b4d149343').then((d) =>
-      this.drawBars(d)
-    );
+    d3.json(
+      'https://api.jsonbin.io/b/5eee6a5397cb753b4d149343'
+    ).then((d: any[]) => this.drawBars(d));
   }
 }
